@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dark-theme {
+    --bg-color: #2e2c39;
+
+    --card-bg-color: rgba(255, 255, 255, .03); 
+    --card-color: #fff;
+    --card-shadow-color: rgba(0, 0, 0, 0.1);
+
+    --card-heart-color: rgba(143, 155, 179, .3);
+    --card-heart-active-color: #8F9BB3;
+
+    --card-new-price: #7F9FF6;
+    --card-old-price: var(--card-heart-active-color );
+
+    --card-raiting: var(--card-old-price);
+}
+
+.light-theme {
+    --bg-color: #ffffff;
+
+    --card-bg-color: rgba(255, 255, 255, 1); 
+    --card-color: #343241;
+    --card-shadow-color: rgba(0, 0, 0, 0.1);
+
+    --card-heart-color: rgba(143, 155, 179, .3);
+    --card-heart-active-color: #8F9BB3;
+
+    --card-new-price: #2E4B9C;
+    --card-old-price: var(--card-heart-active-color );
+
+    --card-raiting: var(--card-old-price);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.card {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: var(--card-color);
+    width: 156px;
+    border-radius: 8px;
+    // margin-top: 50px;
+    padding: 36px 10px 12px;
+    box-shadow: 0px 8px 14px var(--card-shadow-color);
+    background-color: var(--card-bg-color);
+    &__image {
+        margin: 0 auto 10px;
+        display: block;
+    }
+    &__add {
+        position: absolute;
+        display: flex;
+        top: 12px;
+        right: 12px;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+    }
+    &__add--active &__heart {
+        fill: var(--card-heart-active-color);
+    }
+    &__heart {
+        margin: auto;
+        width: 16px;
+        height: 16px;
+        fill: var(--card-heart-color);
+    }
+    &__title {
+        @include font(14px, 16px, 500);
+        margin-bottom: 8px;
+    }
+    &__bottom {
+        display: flex;
+    }
+    &__price {
+        display: flex;
+        align-items: center;
+    }
+    &__new-price {
+        @include font(16px, 19px, 500);
+        color: var(--card-new-price);
+    }
+    &__old-price {
+        @include font(12px, 14px, 300);
+        color: var(--card-old-price);
+        text-decoration: line-through;
+        margin-left: 4px;
+    }
+    &__rank {
+        @extend .card__price;
+        margin-left: auto;
+    }
+    &__star {
+        width: 12px;
+        height: 12px;
+        margin-right: 3px;
+    }
+    &__rating {
+        @include font(12px, 14px, 300);
+        color: var(--card-raiting); 
+    }
+}

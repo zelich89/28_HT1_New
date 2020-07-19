@@ -1,0 +1,63 @@
+.dark-theme {
+    --checkbox-border: rgb(0, 0, 128);
+    --checkbox-back: rgba(67, 67, 133, 0.5);
+    --checkbox-color: rgba(37, 40, 48, 0.5);
+    --checkbox-text: #ffffff;
+}
+
+.light-theme {
+    --checkbox-border: rgb(110, 110, 232);
+    --checkbox-back: rgba(0, 0, 128, .5);
+    --checkbox-color: #ffffff;
+    --checkbox-text: #000000;
+}
+
+.my-checkbox {
+    display: inline-block;
+    margin: 25px;
+    background-color: var(--checkbox-border);
+    padding: 5px;
+    width: 100px;
+    height: 50px;
+    border-radius: 16px;
+    cursor: pointer;
+    &__checked {
+        width: 100%;
+        height: 100%;
+        background-color: var(--checkbox-back);
+        border-radius: 12px;
+        position: relative;
+        &:before {
+          content: "НоЧЬ";
+          position: absolute;
+          top: 0;
+          right: 52%;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-transform: uppercase;
+          font-family: "Roboto", sans-serif;
+          font: 10px/14px sans-serif;
+          background-color: var(--checkbox-color);
+          color: var(--checkbox-text);
+          font-weight: 500;
+          border-radius: 12px;
+          transition: all 1s ease;
+        }
+    }
+    &__input {
+        outline:none;
+        &:focus { outline: none; }
+        &:checked ~ {
+            .my-checkbox__checked {
+                &:before {
+                  background-color: var(--checkbox-color);
+                  
+                  transform: translateX(47px);
+                  content: "День";
+                }}
+        }
+    }
+}

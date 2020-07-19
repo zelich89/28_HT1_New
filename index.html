@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/main.css">
+    
+
+    <svg style="display: none;">
+        <symbol id="icon-heart" viewBox="0 0 18 16">
+            <path d="M15.8842 8.5955L15.894 8.606L8.99999 15.5L2.10599 8.606L2.11574 8.5955C0.455161 6.65954 0.567564 3.77082 2.37356 1.96974C4.17955 0.16867 7.06857 0.0641456 8.99999 1.73C10.9314 0.0641456 13.8204 0.16867 15.6264 1.96974C17.4324 3.77082 17.5448 6.65954 15.8842 8.5955Z"/>
+        </symbol>
+        <symbol id="icon-star" viewBox="0 0 12 12">
+            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.00924683H11.9999V11.9914H0V0.00924683Z" fill="white"/>
+                </mask>
+                <g mask="url(#mask0)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6815 4.29201L7.99255 3.72851L6.33898 0.206544C6.21545 -0.0565188 5.78405 -0.0565188 5.66051 0.206544L4.00742 3.72851L0.318452 4.29201C0.0154835 4.33851 -0.105485 4.70704 0.107046 4.92457L2.78698 7.67151L2.15342 11.5551C2.10301 11.8635 2.43248 12.095 2.70495 11.9435L5.99998 10.1226L9.29501 11.944C9.56492 12.094 9.89745 11.867 9.84655 11.5555L9.21298 7.67201L11.8929 4.92508C12.1055 4.70704 11.984 4.33851 11.6815 4.29201Z" fill="#BFBFBF"/>
+                </g>
+                <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.00924683H11.9999V11.9914H0V0.00924683Z" fill="white"/>
+                </mask>
+                <g mask="url(#mask1)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.00742 3.72849L0.318452 4.29199C0.0154835 4.33849 -0.105485 4.70702 0.107046 4.92455L2.78698 7.67149L2.15342 11.555C2.10301 11.8635 2.43248 12.095 2.70495 11.9435L5.99998 10.1225L9.29501 11.944C9.56492 12.094 9.89745 11.8669 9.84655 11.5555L9.21298 7.67199L4.00742 3.72849Z" fill="#FFC107"/>
+                </g>
+        </symbol>
+    </svg>
+</head>
+<body class="dark-theme">
+    <label class="my-checkbox">
+        <input class="my-checkbox__input" id="checkbox_check" hidden type="checkbox"/>
+        <div class="my-checkbox__checked"></div>
+    </label>
+    <a href="#" class="card">
+        <img class="card__image" src="build/image/1.png" alt="">
+        <div class="card__add">
+            <svg class="card__heart">
+                <use xlink:href="#icon-heart" />
+            </svg>
+        </div>
+        <div class="card__title">Classic Chair</div>
+        <div class="card__bottom">
+            <div class="card__price">   
+                <div class="card__new-price">45$</div>
+                <div class="card__old-price">45$</div>
+                
+            </div>
+            <div class="card__rank">
+                <svg class="card__star">
+                    <use xlink:href="#icon-star" />
+                </svg>
+                <div class="card__rating">4.7</div>
+            </div>
+        </div>
+    </a>
+
+<script src="app/js/index.js"></script>
+</body>
+</html>

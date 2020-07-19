@@ -44,7 +44,7 @@
           color: var(--checkbox-text);
           font-weight: 500;
           border-radius: 12px;
-          transition: all 1s ease;
+          transition: all .5s ease;
         }
     }
     &__input {
@@ -54,7 +54,6 @@
             .my-checkbox__checked {
                 &:before {
                   background-color: var(--checkbox-color);
-                  
                   transform: translateX(47px);
                   content: "День";
                 }}

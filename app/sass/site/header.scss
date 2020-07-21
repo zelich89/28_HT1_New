@@ -117,7 +117,7 @@ img {
         @include font(14px, 16px, 300);
     }
     &__link.active {
-        color: #2E4B9C;
+        color: var(--header-active-link);
         font-weight: 500;
         border-bottom: 3px solid var(--header-active-link) ;
     }

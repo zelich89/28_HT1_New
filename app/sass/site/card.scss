@@ -7,6 +7,9 @@
 .dark-theme {
     --bg-color: #2e2c39;
 
+    --header-batt: #fff;
+    --header-text: #fff;
+
     --card-bg-color: rgba(255, 255, 255, .03); 
     --card-color: #fff;
     --card-shadow-color: rgba(0, 0, 0, 0.1);
@@ -34,11 +37,6 @@
     --card-old-price: var(--card-heart-active-color );
 
     --card-raiting: var(--card-old-price);
-}
-
-body {
-    background-color: var(--bg-color);
-    transition: background-color .5s ease;
 }
 
 .card {

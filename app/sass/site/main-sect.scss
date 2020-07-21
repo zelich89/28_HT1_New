@@ -1,0 +1,31 @@
+.dark-theme {
+    --main-sect-search: #E4E9F2;
+    --main-sect-bag: #8F9BB3;
+}
+
+
+.light-theme {
+    --main-sect-search: #E4E9F2;
+    --main-sect-bag: #2E2C38;
+}
+
+.main-sect {
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-right: -5px;
+        margin-left: -5px;
+        padding-top: 16px;
+        flex-grow: 1;
+        overflow: auto;
+        min-height: 130px;
+        height: calc(100vh - 170px);
+    }
+    &__item {
+        width: 50%;
+        margin-bottom: 16px;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+}

@@ -1,63 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/css/main.css">
-    
+
 
     <svg style="display: none;">
         <symbol id="icon-heart" viewBox="0 0 18 16">
-            <path d="M15.8842 8.5955L15.894 8.606L8.99999 15.5L2.10599 8.606L2.11574 8.5955C0.455161 6.65954 0.567564 3.77082 2.37356 1.96974C4.17955 0.16867 7.06857 0.0641456 8.99999 1.73C10.9314 0.0641456 13.8204 0.16867 15.6264 1.96974C17.4324 3.77082 17.5448 6.65954 15.8842 8.5955Z"/>
+            <path
+                d="M15.8842 8.5955L15.894 8.606L8.99999 15.5L2.10599 8.606L2.11574 8.5955C0.455161 6.65954 0.567564 3.77082 2.37356 1.96974C4.17955 0.16867 7.06857 0.0641456 8.99999 1.73C10.9314 0.0641456 13.8204 0.16867 15.6264 1.96974C17.4324 3.77082 17.5448 6.65954 15.8842 8.5955Z" />
         </symbol>
         <symbol id="icon-star" viewBox="0 0 12 12">
             <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.00924683H11.9999V11.9914H0V0.00924683Z" fill="white"/>
-                </mask>
-                <g mask="url(#mask0)">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6815 4.29201L7.99255 3.72851L6.33898 0.206544C6.21545 -0.0565188 5.78405 -0.0565188 5.66051 0.206544L4.00742 3.72851L0.318452 4.29201C0.0154835 4.33851 -0.105485 4.70704 0.107046 4.92457L2.78698 7.67151L2.15342 11.5551C2.10301 11.8635 2.43248 12.095 2.70495 11.9435L5.99998 10.1226L9.29501 11.944C9.56492 12.094 9.89745 11.867 9.84655 11.5555L9.21298 7.67201L11.8929 4.92508C12.1055 4.70704 11.984 4.33851 11.6815 4.29201Z" fill="#BFBFBF"/>
-                </g>
-                <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.00924683H11.9999V11.9914H0V0.00924683Z" fill="white"/>
-                </mask>
-                <g mask="url(#mask1)">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.00742 3.72849L0.318452 4.29199C0.0154835 4.33849 -0.105485 4.70702 0.107046 4.92455L2.78698 7.67149L2.15342 11.555C2.10301 11.8635 2.43248 12.095 2.70495 11.9435L5.99998 10.1225L9.29501 11.944C9.56492 12.094 9.89745 11.8669 9.84655 11.5555L9.21298 7.67199L4.00742 3.72849Z" fill="#FFC107"/>
-                </g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.00924683H11.9999V11.9914H0V0.00924683Z"
+                    fill="white" />
+            </mask>
+            <g mask="url(#mask0)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.6815 4.29201L7.99255 3.72851L6.33898 0.206544C6.21545 -0.0565188 5.78405 -0.0565188 5.66051 0.206544L4.00742 3.72851L0.318452 4.29201C0.0154835 4.33851 -0.105485 4.70704 0.107046 4.92457L2.78698 7.67151L2.15342 11.5551C2.10301 11.8635 2.43248 12.095 2.70495 11.9435L5.99998 10.1226L9.29501 11.944C9.56492 12.094 9.89745 11.867 9.84655 11.5555L9.21298 7.67201L11.8929 4.92508C12.1055 4.70704 11.984 4.33851 11.6815 4.29201Z"
+                    fill="#BFBFBF" />
+            </g>
+            <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="12">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.00924683H11.9999V11.9914H0V0.00924683Z"
+                    fill="white" />
+            </mask>
+            <g mask="url(#mask1)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4.00742 3.72849L0.318452 4.29199C0.0154835 4.33849 -0.105485 4.70702 0.107046 4.92455L2.78698 7.67149L2.15342 11.555C2.10301 11.8635 2.43248 12.095 2.70495 11.9435L5.99998 10.1225L9.29501 11.944C9.56492 12.094 9.89745 11.8669 9.84655 11.5555L9.21298 7.67199L4.00742 3.72849Z"
+                    fill="#FFC107" />
+            </g>
+        </symbol>
+        <symbol id="icon-battery" viewBox="0 0 25 10">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 1.5C0 0.671573 0.671573 0 1.5 0H21C21.8284 0 22.5 0.671573 22.5 1.5V8C22.5 8.82843 21.8284 9.5 21 9.5H1.5C0.671573 9.5 0 8.82843 0 8V1.5ZM23 6.5V3H23.5C24.0523 3 24.5 3.44772 24.5 4V5.5C24.5 6.05228 24.0523 6.5 23.5 6.5H23ZM1.5 0.5C0.947716 0.5 0.5 0.947715 0.5 1.5V8C0.5 8.55229 0.947715 9 1.5 9H21C21.5523 9 22 8.55229 22 8V1.5C22 0.947715 21.5523 0.5 21 0.5H1.5ZM1 1.5C1 1.22386 1.22386 1 1.5 1H21C21.2761 1 21.5 1.22386 21.5 1.5V8C21.5 8.27614 21.2761 8.5 21 8.5H1.5C1.22386 8.5 1 8.27614 1 8V1.5Z" />
+        </symbol>
+        <symbol id="icon-search" viewBox="0 0 14 14">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14 13.0102L13.0102 14L10.0401 11.0306L11.0299 10.0401L14 13.0102ZM5.6 9.8C3.2844 9.8 1.4 7.9163 1.4 5.6C1.4 3.2844 3.2844 1.4 5.6 1.4C7.9156 1.4 9.8 3.2844 9.8 5.6C9.8 7.9163 7.9156 9.8 5.6 9.8ZM5.6 0C2.5074 0 0 2.5074 0 5.6C0 8.6926 2.5074 11.2 5.6 11.2C8.6926 11.2 11.2 8.6926 11.2 5.6C11.2 2.5074 8.6926 0 5.6 0Z" />
+        </symbol>
+        <symbol id="icon-bag" viewBox="0 0 20 23">
+            <path
+                d="M17.8204 20.1239C17.3171 20.6673 16.6321 20.9666 15.8914 20.9666H4.10665C3.36596 20.9666 2.68093 20.6673 2.17758 20.1239C1.67433 19.5805 1.42827 18.8745 1.48482 18.138L2.61142 6.71897C2.62285 6.56961 2.74916 6.45266 2.89896 6.45266H5.12369V8.27212C5.12369 8.68005 5.45443 9.01079 5.86236 9.01079C6.27034 9.01079 6.60103 8.68005 6.60103 8.27212V6.45266H13.397V8.27212C13.397 8.68005 13.7277 9.01079 14.1357 9.01079C14.5436 9.01079 14.8743 8.68005 14.8743 8.27212V6.45266H17.0991C17.2489 6.45266 17.3752 6.56965 17.3868 6.72094L18.5132 18.136C18.5698 18.8745 18.3238 19.5805 17.8204 20.1239ZM6.60103 4.87532C6.60103 3.00167 8.12541 1.47734 9.99901 1.47734C11.8727 1.47734 13.397 3.00172 13.397 4.87532V4.97532H6.60103V4.87532ZM18.8597 6.60601C18.7895 5.69163 18.0162 4.97532 17.0991 4.97532H14.8743V4.87532C14.8743 2.18704 12.6873 0 9.99901 0C7.31078 0 5.12369 2.18704 5.12369 4.87532V4.97532H2.89896C1.98192 4.97532 1.20857 5.69158 1.13857 6.60409L0.0119174 18.0231C-0.0752748 19.1598 0.31906 20.2914 1.09374 21.1278C1.86837 21.9641 2.9666 22.4439 4.1066 22.4439H15.8914C17.0314 22.4439 18.1296 21.9642 18.9043 21.1278C19.6791 20.2914 20.0733 19.1598 19.9861 18.0211L18.8597 6.60601Z" />
+        </symbol>
+        <symbol id="icon-home" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5686 6.95922C15.5683 6.95888 15.5679 6.9585 15.5675 6.95813L9.04079 0.431625C8.76258 0.153313 8.3927 0 7.99929 0C7.60586 0 7.23598 0.153188 6.95767 0.431531L0.434325 6.95472C0.432138 6.95691 0.42995 6.95922 0.427763 6.96144C-0.14355 7.536 -0.14255 8.46825 0.430544 9.04138C0.692388 9.30334 1.03823 9.45506 1.40798 9.47094C1.42298 9.47241 1.43814 9.47316 1.45339 9.47316H1.71351V14.2762C1.71351 15.2267 2.48683 16 3.43751 16H5.99098C6.24976 16 6.45973 15.7902 6.45973 15.5312V11.7656C6.45973 11.3319 6.81251 10.9791 7.24623 10.9791H8.75233C9.18604 10.9791 9.53883 11.3319 9.53883 11.7656V15.5312C9.53883 15.7902 9.74867 16 10.0076 16H12.561C13.5117 16 14.285 15.2267 14.285 14.2762V9.47316H14.5263C14.9196 9.47316 15.2895 9.31994 15.5679 9.04163C16.1416 8.46753 16.1419 7.53369 15.5686 6.95922Z"/>
+        </symbol>
+        <symbol id="icon-apps" viewBox="0 0 16 16">
+            <g>
+                <rect x="0.52" y="0.52" width="6.16" height="6.16" rx="1.88" stroke-width="1.04"/>
+                <rect x="9.31999" y="0.52" width="6.16" height="6.16" rx="1.88" stroke-width="1.04"/>
+                <rect x="0.52" y="9.31999" width="6.16" height="6.16" rx="1.88" stroke-width="1.04"/>
+                <rect x="9.31999" y="9.31999" width="6.16" height="6.16" rx="1.88" stroke-width="1.04"/>
+            </g>
+        </symbol>
+        <symbol id="icon-burger" viewBox="0 0 16 10">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.666667 8.20513C0.298667 8.20513 0 8.49231 0 8.84615V9.35897C0 9.71282 0.298667 10 0.666667 10H15.3333C15.7013 10 16 9.71282 16 9.35897V8.84615C16 8.49231 15.7013 8.20513 15.3333 8.20513H0.666667ZM0.666667 0C0.298667 0 0 0.287179 0 0.641026V1.15385C0 1.50769 0.298667 1.79487 0.666667 1.79487H15.3333C15.7013 1.79487 16 1.50769 16 1.15385V0.641026C16 0.287179 15.7013 0 15.3333 0H0.666667ZM16 5.25641C16 5.61026 15.7013 5.89744 15.3333 5.89744H0.666667C0.298667 5.89744 0 5.61026 0 5.25641V4.74359C0 4.38974 0.298667 4.10256 0.666667 4.10256H15.3333C15.7013 4.10256 16 4.38974 16 4.74359V5.25641Z"/>
+        </symbol>
+        <symbol id="icon-home" viewBox="0 0 16 16">
         </symbol>
     </svg>
 </head>
+
 <body class="dark-theme">
+    <label class="my-checkbox">
+        <input class="my-checkbox__input" id="checkbox_check" hidden type="checkbox" />
+        <div class="my-checkbox__checked"></div>
+    </label>
     <div class="full">
-        <label class="my-checkbox">
-            <input class="my-checkbox__input" id="checkbox_check" hidden type="checkbox"/>
-            <div class="my-checkbox__checked"></div>
-        </label>
-        <a href="#" class="card">
-            <img class="card__image" src="build/image/1.png" alt="">
-            <div class="card__add">
-                <svg class="card__heart">
-                    <use xlink:href="#icon-heart" />
-                </svg>
-            </div>
-            <div class="card__title">Classic Chair</div>
-            <div class="card__bottom">
-                <div class="card__price">   
-                    <div class="card__new-price">45$</div>
-                    <div class="card__old-price">45$</div>
-                    
+        <div class="header">
+            <div class="container">
+                <div class="header__up">
+                    <div class="header__time">9:28 PM</div>
+                    <div class="header__energy">
+                        <div class="header__percent">100%</div>
+                        <svg class="header__battery">
+                            <use xlink:href="#icon-battery" />
+                        </svg>
+                    </div>
                 </div>
-                <div class="card__rank">
-                    <svg class="card__star">
-                        <use xlink:href="#icon-star" />
+                <div class="header__sect">
+                    <div class="header__logo logo header__logo--indent">
+                        <img src="build/image/Logo.png" alt="">
+                    </div>
+                    <div class="header__search">
+                        <input class="header__input" type="text" placeholder="What you are looking ">
+                        <svg class="header__in">
+                            <use xlink:href="#icon-search" />
+                        </svg>
+                    </div>
+                    <svg class="header__icon">
+                        <use xlink:href="#icon-bag" />
                     </svg>
-                    <div class="card__rating">4.7</div>
+                </div>
+                <div class="header__nav">
+                    <a href="#" class="header__link active">Trending</a>
+                    <a href="#" class="header__link">New</a>
+                    <a href="#" class="header__link">Sale</a>
+                    <a href="#" class="header__link">Most orderd</a>
+                    <a href="#" class="header__link">For you</a>
                 </div>
             </div>
-        </a>
+        </div>
+
+        <div class="main-sect">
+            <div class="container">
+                <div class="main-sect__items">
+                    <div class="main-sect__item">
+                        <a href="#" class="card">
+                            <img class="card__image" src="build/image/1.png" alt="">
+                            <div class="card__add">
+                                <svg class="card__heart">
+                                    <use xlink:href="#icon-heart" />
+                                </svg>
+                            </div>
+                            <div class="card__title">Classic Chair</div>
+                            <div class="card__bottom">
+                                <div class="card__price">
+                                    <div class="card__new-price">45$</div>
+                                    <div class="card__old-price">45$</div>
+                                </div>
+                                <div class="card__rank">
+                                    <svg class="card__star">
+                                        <use xlink:href="#icon-star" />
+                                    </svg>
+                                    <div class="card__rating">4.7</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main-sect__item">
+                        <a href="#" class=" card">
+                            <img class="card__image" src="build/image/2.png" alt="">
+                            <div class="card__add card__add--active">
+                                <svg class="card__heart">
+                                    <use xlink:href="#icon-heart" />
+                                </svg>
+                            </div>
+                            <div class="card__title">Classic Chair</div>
+                            <div class="card__bottom">
+                                <div class="card__price">
+                                    <div class="card__new-price">45$</div>
+                                    <div class="card__old-price">45$</div>
+                                </div>
+                                <div class="card__rank">
+                                    <svg class="card__star">
+                                        <use xlink:href="#icon-star" />
+                                    </svg>
+                                    <div class="card__rating">4.7</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main-sect__item">
+                        <a href="#" class="card">
+                            <img class="card__image" src="build/image/3.png" alt="">
+                            <div class="card__add">
+                                <svg class="card__heart">
+                                    <use xlink:href="#icon-heart" />
+                                </svg>
+                            </div>
+                            <div class="card__title">Classic Chair</div>
+                            <div class="card__bottom">
+                                <div class="card__price">
+                                    <div class="card__new-price">45$</div>
+                                    <div class="card__old-price">45$</div>
+                                </div>
+                                <div class="card__rank">
+                                    <svg class="card__star">
+                                        <use xlink:href="#icon-star" />
+                                    </svg>
+                                    <div class="card__rating">4.7</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main-sect__item">
+                        <a href="#" class="card">
+                            <img class="card__image" src="build/image/4.png" alt="">
+                            <div class="card__add">
+                                <svg class="card__heart">
+                                    <use xlink:href="#icon-heart" />
+                                </svg>
+                            </div>
+                            <div class="card__title">Classic Chair</div>
+                            <div class="card__bottom">
+                                <div class="card__price">
+                                    <div class="card__new-price">45$</div>
+                                    <div class="card__old-price">45$</div>
+                                </div>
+                                <div class="card__rank">
+                                    <svg class="card__star">
+                                        <use xlink:href="#icon-star" />
+                                    </svg>
+                                    <div class="card__rating">4.7</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main-sect__item">
+                        <a href="#" class="card">
+                            <img class="card__image" src="build/image/3.png" alt="">
+                            <div class="card__add">
+                                <svg class="card__heart">
+                                    <use xlink:href="#icon-heart" />
+                                </svg>
+                            </div>
+                            <div class="card__title">Classic Chair</div>
+                            <div class="card__bottom">
+                                <div class="card__price">
+                                    <div class="card__new-price">45$</div>
+                                    <div class="card__old-price">45$</div>
+                                </div>
+                                <div class="card__rank">
+                                    <svg class="card__star">
+                                        <use xlink:href="#icon-star" />
+                                    </svg>
+                                    <div class="card__rating">4.7</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main-sect__item">
+                        <a href="#" class="card">
+                            <img class="card__image" src="build/image/4.png" alt="">
+                            <div class="card__add">
+                                <svg class="card__heart">
+                                    <use xlink:href="#icon-heart" />
+                                </svg>
+                            </div>
+                            <div class="card__title">Classic Chair</div>
+                            <div class="card__bottom">
+                                <div class="card__price">
+                                    <div class="card__new-price">45$</div>
+                                    <div class="card__old-price">45$</div>
+                                </div>
+                                <div class="card__rank">
+                                    <svg class="card__star">
+                                        <use xlink:href="#icon-star" />
+                                    </svg>
+                                    <div class="card__rating">4.7</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main-sect__item">
+                        <a href="#" class="card">
+                            <img class="card__image" src="build/image/1.png" alt="">
+                            <div class="card__add">
+                                <svg class="card__heart">
+                                    <use xlink:href="#icon-heart" />
+                                </svg>
+                            </div>
+                            <div class="card__title">Classic Chair</div>
+                            <div class="card__bottom">
+                                <div class="card__price">
+                                    <div class="card__new-price">45$</div>
+                                    <div class="card__old-price">45$</div>
+                                </div>
+                                <div class="card__rank">
+                                    <svg class="card__star">
+                                        <use xlink:href="#icon-star" />
+                                    </svg>
+                                    <div class="card__rating">4.7</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="main-sect__item">
+                        <a href="#" class="card">
+                            <img class="card__image" src="build/image/1.png" alt="">
+                            <div class="card__add">
+                                <svg class="card__heart">
+                                    <use xlink:href="#icon-heart" />
+                                </svg>
+                            </div>
+                            <div class="card__title">Classic Chair</div>
+                            <div class="card__bottom">
+                                <div class="card__price">
+                                    <div class="card__new-price">45$</div>
+                                    <div class="card__old-price">45$</div>
+                                </div>
+                                <div class="card__rank">
+                                    <svg class="card__star">
+                                        <use xlink:href="#icon-star" />
+                                    </svg>
+                                    <div class="card__rating">4.7</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__nav">
+                <div class="footer__element">
+                    <svg class="footer__icon">
+                        <use xlink:href="#icon-home" />
+                    </svg>
+                    <div class="footer__text">Menu</div>
+                </div>
+                <div class="footer__element active">
+                    <svg class="footer__icon footer__icon--stroke">
+                        <use xlink:href="#icon-apps" />
+                    </svg>
+                    <div class="footer__text">Apps</div>
+                </div>
+                <div class="footer__element">
+                    <svg class="footer__icon footer__icon--stroke">
+                        <use xlink:href="#icon-heart" />
+                    </svg>
+                    <div class="footer__text">Likes</div>
+                </div>
+                <div class="footer__element">
+                    <svg class="footer__icon">
+                        <use xlink:href="#icon-burger" />
+                    </svg>
+                    <div class="footer__text">Burger</div>
+                </div>
+            </div>
+        </div>
     </div>
 
-<script src="app/js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+
+    <script src="app/js/index.js"></script>
+    <script src="https://cdn.rawgit.com/inuyaksa/jquery.nicescroll/master/jquery.nicescroll.min.js"></script>
+    <script>
+        $(".main-sect__items").niceScroll({
+            cursorborder: "1px solid transparent",
+            horizrailenabled: false,
+            railpadding: { top: 0, right: 2, left: 0, bottom: 0 },
+            cursoropacitymax: .2,
+            cursoropacitymin: .2,
+            cursorwidth: "2px",
+            cursorminheight: 32
+        });
+    </script>
+    <script>
+        $(".header__nav").niceScroll({
+            cursorborder: "1px solid transparent",
+            horizrailenabled: true,
+            railpadding: { top: 0, right: 2, left: 0, bottom: 0 },
+            cursoropacitymax: .2,
+            cursoropacitymin: .2,
+            cursorwidth: "2px",
+            touchbehavior: true,
+            cursorminheight: 32
+        });
+    </script>
 </body>
+
 </html>

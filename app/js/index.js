@@ -17,3 +17,22 @@ input.addEventListener('click', function() {
     }
 console.log(night);
 });
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let fElement = document.querySelectorAll('.footer__element'),
+    fNav = document.querySelector('.footer__nav');
+
+    fNav.addEventListener('click', function(event) {
+        let target = event.target;
+
+        for (let i = 0; i < fElement.length; i++) {
+            if (target == fElement[i]) {
+                fElement[i].classList.add('active');
+            } else {
+                fElement[i].classList.remove('active');
+
+            }
+        }
+    });

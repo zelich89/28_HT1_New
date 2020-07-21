@@ -1,3 +1,9 @@
 @mixin font($font-size: $font-size, $line-height: $line-height, $font-weight: null){
   font: $font-weight #{$font-size}/#{$line-height} 'Roboto', sans-serif;
 }
+
+@mixin fontAbha($font-size: $font-size, $line-height: $line-height, $font-weight: null){
+  font: $font-weight #{$font-size}/#{$line-height} 'Abhaya Libre', sans-serif;
+}
+
+// Abhaya+Libre

@@ -4,41 +4,6 @@
     box-sizing: border-box;
 }
 
-.dark-theme {
-    --bg-color: #2e2c39;
-
-    --header-batt: #fff;
-    --header-text: #fff;
-
-    --card-bg-color: rgba(255, 255, 255, .03); 
-    --card-color: #fff;
-    --card-shadow-color: rgba(0, 0, 0, 0.1);
-
-    --card-heart-color: rgba(143, 155, 179, .3);
-    --card-heart-active-color: #8F9BB3;
-
-    --card-new-price: #7F9FF6;
-    --card-old-price: var(--card-heart-active-color );
-
-    --card-raiting: var(--card-old-price);
-}
-
-.light-theme {
-    --bg-color: #ffffff;
-
-    --card-bg-color: rgba(255, 255, 255, 1); 
-    --card-color: #343241;
-    --card-shadow-color: rgba(0, 0, 0, 0.1);
-
-    --card-heart-color: rgba(143, 155, 179, .3);
-    --card-heart-active-color: #8F9BB3;
-
-    --card-new-price: #2E4B9C;
-    --card-old-price: var(--card-heart-active-color );
-
-    --card-raiting: var(--card-old-price);
-}
-
 .card {
     position: relative;
     display: block;

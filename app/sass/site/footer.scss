@@ -1,18 +1,7 @@
-.dark-theme {
-    --bg-color: #2e2c39;
-    --footer-color: #8F9BB3;
-    --footer-active: #7F9FF6;
-}
-
-.light-theme {
-    --bg-color: #ffffff;
-    --footer-color: #A4A4A4;
-    --footer-active: #2E4B9C;
-}
 
 .footer {
     flex-shrink: 0;
-    background-color: var(--bg-color);
+    background-color: var(--footer-bg-color);
     border-radius: 8px 8px 0 0;
     height: 44px;
 

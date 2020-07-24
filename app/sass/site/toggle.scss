@@ -1,18 +1,4 @@
-.dark-theme {
-    --checkbox-border: rgb(0, 0, 128);
-    --checkbox-back: rgba(67, 67, 133, 0.5);
-    --checkbox-color: rgba(37, 40, 48, 0.5);
-    --checkbox-text: #ffffff;
-}
-
-.light-theme {
-    --checkbox-border: rgb(110, 110, 232);
-    --checkbox-back: rgba(0, 0, 128, .5);
-    --checkbox-color: #ffffff;
-    --checkbox-text: #000000;
-}
-
-.my-checkbox {
+.toggle {
     display: inline-block;
     margin: 25px;
     margin-left: 400px;
@@ -29,7 +15,7 @@
         border-radius: 12px;
         position: relative;
         &:before {
-          content: "НоЧЬ";
+          content: "НоЧm";
           position: absolute;
           top: 0;
           right: 52%;
@@ -52,7 +38,7 @@
         outline:none;
         &:focus { outline: none; }
         &:checked ~ {
-            .my-checkbox__checked {
+            .toggle__checked {
                 &:before {
                   background-color: var(--checkbox-color);
                   transform: translateX(47px);

@@ -1,0 +1,15 @@
+.color {
+    display: flex;
+    cursor: pointer;
+    &__checked {
+        margin: auto;
+        width: 12px;
+        height: 9px;
+        fill: var(--card-heart-color);
+        transform: scale(0);
+        transition: transform $transition-time ease;
+    }
+    &__input:checked ~ &__checked {
+        transform: scale(1);
+      }
+}

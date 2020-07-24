@@ -1,16 +1,6 @@
-.dark-theme {
-    --main-sect-search: #E4E9F2;
-    --main-sect-bag: #8F9BB3;
-}
-
-
-.light-theme {
-    --main-sect-search: #E4E9F2;
-    --main-sect-bag: #2E2C38;
-}
-
 .main-sect {
     &__items {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
@@ -27,5 +17,14 @@
         margin-bottom: 16px;
         padding-right: 8px;
         padding-left: 8px;
+    }
+    &__additional {
+        position: fixed;
+        width: 360px;
+        top: 35px;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        outline: none;
     }
 }

@@ -1,22 +1,73 @@
+body {
+    background: #F2F2F2;
+}
+
 img {
     vertical-align: top;
 }
 
 .dark-theme {
-    --header-batt: #fff;
+    --bg-color: #2e2c39;
+
+    --header-battery: #fff;
     --header-text: #fff;
     --header-bg-color: rgba(255, 255, 255, .03); 
     --header-nav: rgba(143, 155, 179, .3);
     --header-active-link: #7F9FF6;
+
+    --main-sect-search: #E4E9F2;
+    --main-sect-bag: #8F9BB3;
+    
+    --card-bg-color: rgba(255, 255, 255, .03); 
+    --card-color: #fff;
+    --card-shadow-color: rgba(0, 0, 0, 0.1);
+    --card-heart-color: rgba(143, 155, 179, .3);
+    --card-heart-active-color: #8F9BB3;
+    --card-new-price: #7F9FF6;
+    --card-old-price: var(--card-heart-active-color );
+    --card-raiting: var(--card-old-price);
+
+    --checkbox-border: rgb(0, 0, 128);
+    --checkbox-back: rgba(67, 67, 133, 0.5);
+    --checkbox-color: rgba(37, 40, 48, 0.5);
+    --checkbox-text: #ffffff;
+    
+    --footer-bg-color: #2e2c39;
+    --footer-color: #8F9BB3;
+    --footer-active: #7F9FF6;
 }
 
 
 .light-theme {
-    --header-batt: #6D6D6D;
+    --bg-color: #fff;
+
+    --header-battery: #6D6D6D;
     --header-text: #6D6D6D;
     --header-bg-color: rgba(255, 255, 255, 1); 
     --header-nav: rgba(143, 155, 179, .3);
     --header-active-link: #7F9FF6;
+    
+    --main-sect-search: #E4E9F2;
+    --main-sect-bag: #2E2C38;
+    
+    --card-bg-color: rgba(255, 255, 255, 1); 
+    --card-color: #343241;
+    --card-shadow-color: rgba(0, 0, 0, 0.1);
+    --card-heart-color: rgba(143, 155, 179, .3);
+    --card-heart-active-color: #8F9BB3;
+    --card-new-price: #2E4B9C;
+    --card-old-price: var(--card-heart-active-color );
+    --card-raiting: var(--card-old-price);
+    
+    --checkbox-border: rgb(110, 110, 232);
+    --checkbox-back: rgba(0, 0, 128, .5);
+    --checkbox-color: #ffffff;
+    --checkbox-text: #000000;
+
+    --footer-bg-color: #ffffff;
+    --footer-color: #A4A4A4;
+    --footer-active: #2E4B9C;
+    
 }
 
 .dot {
@@ -32,12 +83,7 @@ img {
     bottom: 0;
     left: 0;
     width: 360px;
-    // width: 420px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-    background-color: var(--bg-color);
+    background-color: var(--bg-color) ;
     transition: background-color .5s ease;
 }
 
@@ -67,7 +113,7 @@ img {
         margin-left: 8px;
         width: 25px;
         height: 10px;
-        fill: var(--header-batt);
+        fill: var(--header-battery);
     }
     &__logo {
         &--indent {
@@ -117,7 +163,7 @@ img {
         @include font(14px, 16px, 300);
     }
     &__link.active {
-        color: var(--header-active-link);
+        color: var(--header-active-link)  ;
         font-weight: 500;
         border-bottom: 3px solid var(--header-active-link) ;
     }

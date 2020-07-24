@@ -44,11 +44,13 @@
         }
     }
     &__back {
+        cursor: pointer;
         width: 11px;
         height: 20px;
         fill: var(--element-primary);
     }
     &__view {
+        cursor: pointer;
         width: 24px;
         height: 16px;
         margin-left: auto;
